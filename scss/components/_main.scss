@@ -190,6 +190,10 @@ form {
   flex-direction: column;
   padding: 1rem 0.5rem;
   width: 100%;
+  .wrap {
+    display: flex;
+    flex-direction: column;
+  }
   .btn {
     display: block;
     margin: 0 auto;
@@ -203,7 +207,7 @@ form {
   @include mg ("md") {
     margin-top: 6rem;
    .wrap {
-     display: flex;
+    flex-direction: row;
    }
     label {
       width: 40%;
