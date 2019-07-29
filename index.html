@@ -15,23 +15,23 @@
       <div class="wrapper">
         <!-- Name -->
         <div class="name">
-          <label for="name">Name</label>
+          <label for="name">* Name</label>
           <input type="text"  name="Name" id="name" placeholder="Name" >
         </div>
         <!-- Email -->
         <div class="email">
-          <label for="email">Email</label>
+          <label for="email"> * Email</label>
           <input type="email" id="email" placeholder="Email" >
         </div>
         <!-- Age -->
       <div class="age">
-        <label for="age">Age</label>
+        <label for="age">* Age</label>
         <input type="text" id="age" placeholder="Age" >
       </div>
     </div>
      <!-- Role - select-->
      <div class="role">
-       <label for="role">Which option best describes your current role?</label>
+       <label for="role">Which option best describes your role?</label>
        <select name="" id="role">
          <option value="" disabled selected>Choose</option>
          <option value="student">Student</option>
@@ -43,15 +43,15 @@
          <span>How likely is that you would recommend freeCodeCamp to a friend?</span>
          <div class="def">
            <label for="def">Definitely</label>
-           <input type="radio" id="def">
+           <input type="radio" name="recommend" id="def">
          </div>
          <div class="may">
           <label for="may">Maybe</label>
-          <input type="radio" id="may">
+          <input type="radio" name="recommend" id="may">
          </div>
          <div class="never">
           <label for="never">Never</label>
-          <input type="radio" id="never">
+          <input type="radio" name="recommend" id="never">
          </div>
        </div>
        <!-- Like - select-->
@@ -95,8 +95,12 @@
       </div>
       <!-- TextField -->
       <div class="text-field">
-        <label for="text-field">Any Comments or Suggestions?</label>
-        <textarea name="#" id="text-field" cols="30" rows="10" placeholder="Enter text"></textarea>
+        <div class="wrap">
+            <label for="text-field">Any Comments or Suggestions?</label>
+            <textarea name="#" id="text-field" cols="30" rows="10" placeholder="Enter text"></textarea>
+
+        </div>
+        
         <div>
           <button class="btn" type="submit">Submit</button>
         </div>
